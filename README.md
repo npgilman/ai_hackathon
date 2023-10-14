@@ -36,6 +36,7 @@ Project for GatorHacks: UF AI Days x Verizon Hackathon
     - [ ] Clean/trim data
     - [ ] Perform analysis
 - [ ] React Website
+    - [ ] Whiteboard website design layout 
     - [ ] Visualize results of analysis
     - [ ] Integrate Chatbot into website
 - [ ] Chatbot
