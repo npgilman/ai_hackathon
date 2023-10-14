@@ -1,9 +1,9 @@
 // clickable button
 
-function Button() {
+function Button({ text }) {
     return (
         <div class="btn btn-light m-1 pb-0">
-            <p> text </p>
+            <p> {text} </p>
         </div>
     );  
 }
