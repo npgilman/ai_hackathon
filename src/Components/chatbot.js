@@ -8,9 +8,9 @@ export default function ChatbotWindow( {param1, param2} ) {
     dangerouslyAllowBrowser: true
   });
 
-  const [prompt, setPrompt] = useState("");
+  const [prompt, setPrompt] = useState('');
   const [loading, setLoading] = useState(false);
-  const [apiResponse, setApiResponse] = useState("");
+  const [apiResponse, setApiResponse] = useState('');
   const [messages, setMessages] = useState([]);
 
   const handleSubmit = async (e) => {
@@ -19,7 +19,7 @@ export default function ChatbotWindow( {param1, param2} ) {
     // Add to messages
     const messageHistory = [...messages];
 
-    if (apiResponse !== "") {
+    if (apiResponse !== '') {
       messageHistory.push({
         text: apiResponse,
         isUser: false,
@@ -34,19 +34,19 @@ export default function ChatbotWindow( {param1, param2} ) {
     // Interatc with OpenAI API
     setLoading(true);
     const query = prompt;
-    setPrompt("");
+    setPrompt('');
     try {
       const result = await openai.chat.completions.create({
-        model: "gpt-3.5-turbo",
-        messages: [{"role": "user", "content": query}],
+        model: 'gpt-3.5-turbo',
+        messages: [{'role': 'user', 'content': query}],
         max_tokens: 50,
       });
-      setPrompt("");
-      console.log("Response: ", result.choices[0].message)
+      setPrompt('');
+      console.log('Response: ', result.choices[0].message)
       setApiResponse(result.choices[0].message.content)
     }
     catch (e) {
-      messageHistory.push("Error");
+      messageHistory.push('Error');
       setMessages(messageHistory);
     }
     setLoading(false);
@@ -56,15 +56,15 @@ export default function ChatbotWindow( {param1, param2} ) {
     <>
       <div
         style={{
-          width: "100%",
-          justifyContent: "center",
-          alignItems: "center",
+          width: '100%',
+          justifyContent: 'center',
+          alignItems: 'center',
           height: '100vh',
         }}
       >
-        <div style={{position: "absolute", bottom: "5rem"}}>
-        <div style={{position: "relative", left: "1rem", right: "1rem", width: "100%"}}>
-        <article className="pb-24">
+        <div style={{position: 'absolute', bottom: '5rem'}}>
+        <div style={{position: 'relative', left: '1rem', right: '1rem', width: '100%'}}>
+        <article className='pb-24'>
           {messages.map((message, index) => (
             <Message
               key={`message-${index}`}
@@ -72,22 +72,22 @@ export default function ChatbotWindow( {param1, param2} ) {
               isUser={message.isUser}
             />
           ))}
-          {loading ? <Message message={""} isUser={false} /> : <Message message={apiResponse} isUser={false} />}
+          {loading ? <Message message={''} isUser={false} /> : <Message message={apiResponse} isUser={false} />}
         </article>
         <div style={{}}>
           <form onSubmit={handleSubmit}>
             <input
-              style={{padding: '1rem', width: "75%"}}
-              type="text"
+              style={{padding: '1rem', width: '75%'}}
+              type='text'
               value={prompt}
-              placeholder="Enter prompt"
+              placeholder='Enter prompt'
               onChange={(e) => setPrompt(e.target.value)}
             ></input>
             <button
               disabled={loading || prompt.length === 0}
-              type="submit"
+              type='submit'
             >
-              {loading ? "Loading" : "Chat"}
+              {loading ? 'Loading' : 'Chat'}
             </button>
           </form>
         </div>

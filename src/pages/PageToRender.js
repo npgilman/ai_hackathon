@@ -1,6 +1,6 @@
-import LandingPage from "./contentPages/LandingPage";
-import FinAccPage from "./contentPages/FinAccPage";
-import Reports from "./contentPages/Reports";
+import LandingPage from './contentPages/LandingPage';
+import FinAccPage from './contentPages/FinAccPage';
+import Reports from './contentPages/Reports';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 function PageToRender() {
     return (
-        <div class="flex-fill">
+        <div className='flex-fill'>
             <Routes>
                 <Route path='/' exact element={<LandingPage />} />
                 

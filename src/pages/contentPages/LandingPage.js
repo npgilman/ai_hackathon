@@ -2,7 +2,7 @@
 
 function LandingPage() {
     return (
-        <div className="flex-fill">
+        <div className='flex-fill'>
             <p> landing page ! </p>
         </div>
     );
