@@ -1,6 +1,6 @@
-# {project_name}
+# Accountability
 
-{brief_description}
+Empowering financial literacy with the power of GenAI
 
 Project for GatorHacks: UF AI Days x Verizon Hackathon
 
