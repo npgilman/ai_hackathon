@@ -13,9 +13,16 @@ function ChatbotWindow( {param1, param2} ) {
   const [prompt, setPrompt] = useState("");
   const [apiResponse, setApiResponse] = useState("");
   const [loading, setLoading] = useState(false);
+  const [messages, setMessages] = useState(["test message 1", "test message 2"]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Add to messages
+    var messageCopy = messages;
+    messageCopy.push(prompt);
+
+
+    // AI list
     setLoading(true);
     try {
       const result = await openai.chat.completions.create({
@@ -25,6 +32,9 @@ function ChatbotWindow( {param1, param2} ) {
       });
       console.log("Response: ", result.choices[0].message)
       setApiResponse(result.choices[0].message);
+      
+      messageCopy.push(result.choices[0].message.content);
+      setMessages(messageCopy);
     }
     catch (e) {
       setApiResponse("Error");
@@ -36,19 +46,24 @@ function ChatbotWindow( {param1, param2} ) {
     <>
       <div
         style={{
-          display: "flex",
           justifyContent: "center",
           alignItems: "center",
           height: '100vh',
         }}
       >
+        <div className="messages" style={{alignItems: "left"}}>
+          {messages.map(message => {
+            return <>{message}<br></br></>
+          })}
+        </div>
         <form onSubmit={handleSubmit}>
-          <textarea
+          <input
+            style={{padding: '1rem', width: "50%"}}
             type="text"
             value={prompt}
             placeholder="Enter prompt"
             onChange={(e) => setPrompt(e.target.value)}
-          ></textarea>
+          ></input>
           <button
             disabled={loading || prompt.length === 0}
             type="submit"
