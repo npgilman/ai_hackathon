@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# {project_name}
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+{brief_description}
 
-## Available Scripts
+Project for GatorHacks: UF AI Days x Verizon Hackathon
 
-In the project directory, you can run:
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Roadmap](#roadmap)
+4. [Contributors](#contributors)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[![project_name Screen Shot][project-screenshot]][Project-url]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Built With
+[![React][React.js]][React-url]<br>
+[![AWS][AWS.Amazon.com]][AWS-url]<br>
+[![Kaggle][Kaggle.com]][Kaggle-url]<br>
 
-### `npm test`
+## Features
+### Feature 1
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Feature 2
 
-### `npm run build`
+### Feature 3
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Roadmap
+- [x] Project Skeleton
+    - [x] React skeleton
+    - [x] Deploy with AWS
+    - [x] README skeleton
+- [ ] Data Analysis
+    - [ ] Identify kaggle dataset(s)
+    - [ ] Clean/trim data
+    - [ ] Perform analysis
+- [ ] React Website
+    - [ ] Visualize results of analysis
+    - [ ] Integrate Chatbot into website
+- [ ] Chatbot
+    - [ ] OpenAI API integration
+    - [ ] Link results to chatbot
+- [ ] Cleaning Up
+    - [ ] Improve website design/theme
+    - [ ] Give chatbot entertaining personality
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contributors
+C.J. Annunziato, Nathan Gilman, David Payne & Monorath Khinsim
 
-### `npm run eject`
+### Aknowledgements
+- [Markdown Badges][markdown-badges]
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- MARKDOWN LINKS & IMAGES -->
+[markdown-badges]: https://github.com/Ileriayo/markdown-badges
+[React.js]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[React-url]: https://reactjs.org/
+[AWS.Amazon.com]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[AWS-url]: https://aws.amazon.com/
+[Kaggle.com]: https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white
+[Kaggle-url]: https://www.kaggle.com/
+[project-screenshot]: images/screenshot.png
+[project-url]: https://main.d3zzit7f6g0xs.amplifyapp.com/
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
