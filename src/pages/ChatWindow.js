@@ -1,9 +1,10 @@
 // chat window to hold gpt bot
+import ChatbotWindow from '../Components/chatbot.js'
 
 function ChatWindow() {
     return (
-        <div class="d-flex flex-column bd-highlight">
-            <p> chat window </p>
+        <div style= {{width: "25%"}}>
+            <ChatbotWindow />
         </div>
     );
 }
