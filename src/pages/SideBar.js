@@ -1,11 +1,25 @@
-// sidebar. specify options or navigate to other pages
+import React from 'react';
+import styled from 'styled-components';
+import { SidebarData } from './SidebarData';
+import SubMenu from './SubMenu';
 
-function SideBar() {
-    return (
-        <div class='d-flex flex-column bd-highlight'>
-            <p> sidebar </p>
-        </div>
-    );
-}
+const SidebarNav = styled.nav`
+  background: #15171c;
+  width: 100%;
+  height: 100vh;
+  display: flex-column; 
+`;
 
-export default SideBar;
+const Sidebar = () => {
+ return (
+    <div className="w-22">
+        <SidebarNav>
+            {SidebarData.map((item, index) => {
+                return <SubMenu item={item} key={index} />;
+            })}
+        </SidebarNav>
+    </div>
+  );
+};
+
+export default Sidebar;
