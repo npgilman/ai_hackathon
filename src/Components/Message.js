@@ -1,25 +1,25 @@
 const Message = ({ message, isUser }) => {
-  let containerClass = "";
+  let containerClass = '';
   if (isUser) {
-    containerClass = "";
+    containerClass = '';
   }
 
   if (Array.isArray(message)) {
-    message = message.join("");
+    message = message.join('');
   }
 
-  if (!message || message === "") {
+  if (!message || message === '') {
     return null;
   }
 
   return (
-    <div className="d-flex flex-row">
-      <div title={isUser ? "user" : "AI"}>
+    <div className='d-flex flex-row'>
+      <div title={isUser ? 'user' : 'AI'}>
         {isUser ? '🥸' : '🦙'}
       </div>
 
       <div>
-        {message.split("\n").map(
+        {message.split('\n').map(
           (text, index) =>
             text.length > 0 && (
               <span key={index}>

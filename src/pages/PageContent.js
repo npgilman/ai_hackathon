@@ -6,7 +6,7 @@ import ChatWindow from './ChatWindow';
 
 function PageContent() {
     return (
-        <div class='d-flex inline-flex bd-highlight flex-fill vh-100'>
+        <div className='d-flex inline-flex bd-highlight flex-fill vh-100'>
             <SideBar />
             <PageToRender />
             <ChatWindow />
