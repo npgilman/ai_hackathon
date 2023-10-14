@@ -1,10 +1,10 @@
 import './App.css';
-import MainPage from './pages/MainPage';
+import PageContent from './pages/PageContent';
 
 function App() {
   return (
     <div class="d-flex bd-highlight">
-      <MainPage />
+      <PageContent />
     </div>
   );
 }
