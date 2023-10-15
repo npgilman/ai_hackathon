@@ -15,9 +15,10 @@ Project for GatorHacks: UF AI Days x Verizon Hackathon
 [![project_name Screen Shot][project-screenshot]][Project-url]
 
 ### Built With
-[![React][React.js]][React-url]<br>
-[![AWS][AWS.Amazon.com]][AWS-url]<br>
-[![Kaggle][Kaggle.com]][Kaggle-url]<br>
+[![OpenAI][OpenAI-API]][OpenAI-url]
+[![AWS][Amazon-AWS]][AWS-url]
+[![React][React.js]][React-url]
+[![Bootstrap][Get-Bootstrap]][Bootstrap-url]
 
 ## Features
 ### Feature 1
@@ -31,17 +32,17 @@ Project for GatorHacks: UF AI Days x Verizon Hackathon
     - [x] React skeleton
     - [x] Deploy with AWS
     - [x] README skeleton
-- [ ] Data Analysis
-    - [ ] Identify kaggle dataset(s)
-    - [ ] Clean/trim data
-    - [ ] Perform analysis
 - [ ] React Website
-    - [ ] Whiteboard website design layout 
-    - [ ] Visualize results of analysis
-    - [ ] Integrate Chatbot into website
+    - [x] Whiteboard website design layout
+    - [x] Implement routing for content screens
+    - [x] Integrate Chatbot into website
+    - [ ] Design content screen layout
 - [ ] Chatbot
-    - [ ] OpenAI API integration
-    - [ ] Link results to chatbot
+    - [x] OpenAI API integration
+    - [ ] Inform chatbot about website routes via prompts
+- [ ] Accounting Content
+    - [ ] Split into sections & subsections
+    - [ ] Generate content screen content
 - [ ] Cleaning Up
     - [ ] Improve website design/theme
     - [ ] Give chatbot entertaining personality
@@ -54,16 +55,15 @@ C.J. Annunziato, Nathan Gilman, David Payne & Monorath Khinsim
 - [Markdown Badges][markdown-badges]
 
 
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 [markdown-badges]: https://github.com/Ileriayo/markdown-badges
-[React.js]: https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB
+[React.js]: https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000&style=for-the-badge
 [React-url]: https://reactjs.org/
-[AWS.Amazon.com]: https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
+[Amazon-AWS]: https://img.shields.io/badge/Amazon%20AWS-232F3E?logo=amazonaws&logoColor=fff&style=for-the-badge
 [AWS-url]: https://aws.amazon.com/
-[Kaggle.com]: https://img.shields.io/badge/Kaggle-035a7d?style=for-the-badge&logo=kaggle&logoColor=white
-[Kaggle-url]: https://www.kaggle.com/
+[OpenAI-API]: https://img.shields.io/badge/OpenAI-412991?logo=openai&logoColor=fff&style=for-the-badge
+[OpenAI-url]: https://platform.openai.com/
+[Get-Bootstrap]: https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=for-the-badge
+[Bootstrap-url]: https://getbootstrap.com/
 [project-screenshot]: images/screenshot.png
 [project-url]: https://main.d3zzit7f6g0xs.amplifyapp.com/
-
