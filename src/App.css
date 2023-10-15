@@ -80,3 +80,9 @@ h5 {
 ::-webkit-scrollbar-thumb:hover {
   background-color: #4c495d;
 }
+
+
+::-webkit-scrollbar {
+  width: 17px;
+  height: 17px;
+}
