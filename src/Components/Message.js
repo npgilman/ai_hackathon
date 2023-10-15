@@ -11,7 +11,7 @@ const Message = ({ message, isUser }) => {
     return text.replace(
       /(\[(.*?)\])\((https?:\/\/\S+)\)/g,
     (match, linkText, linkLabel, linkUrl) => {
-      return `<a href="${linkUrl}" target="_blank" rel="noopener noreferrer">${linkLabel}</a>`;
+      return `<a href="${linkUrl}" rel="noopener noreferrer">${linkLabel}</a>`;
     }
     );
   };
@@ -20,7 +20,7 @@ const Message = ({ message, isUser }) => {
     <div className={isUser ? 'user' : 'AI'}>
       <div className='d-flex flex-row' style={{color: "#E1E1E1", fontSize:"20px", zIndex: "-1"}}>
           <div title={isUser ? 'user' : 'AI'} style={{marginRight: "0.5rem"}}>
-            {isUser ? '😄' : '🦙'}
+            {isUser ? '🐊' : '🤖'}
           </div>
       
 

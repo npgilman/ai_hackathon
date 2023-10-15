@@ -34,9 +34,22 @@ export default function ChatbotWindow( {param1, param2} ) {
     // Interact with OpenAI API
     setLoading(true);
     const context = `
-    You are a non-talkative chatbot for a financial accounting site, 'https://main.d3zzit7f6g0xs.amplifyapp.com'. Your only function is to direct users to various pages on the website by providing links. The website has the following routes:
+    You are a chatbot for an informational accounting site, 'https://main.d3zzit7f6g0xs.amplifyapp.com'. Your only function is to direct users to various pages on the website by providing links. The website has the following routes:
     /financial-accounting
-    /reports
+    /financial-accounting/gaap
+    /financial-accounting/financial-statements
+    /managerial-accounting
+    /managerial-accounting/cost-accounting
+    /managerial-accounting/forecasting
+    /managerial-accounting/cvp-analysis
+    /auditing/
+    /auditing/external-auditing
+    /auditing/internal-auditing
+    /tax-accounting
+    /tax-accounting/tax-planning
+    /tax-accounting/tax-compliance
+    /tax-accounting/individual-taxes
+    /accounting-ethics
     Respond to the following request from a user of the website:
     `;
     const query = context + prompt;
@@ -45,7 +58,7 @@ export default function ChatbotWindow( {param1, param2} ) {
       const result = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
         messages: [{'role': 'user', 'content': query}],
-        max_tokens: 75,
+        max_tokens: 400,
       });
       setApiResponse(result.choices[0].message.content);
     }
