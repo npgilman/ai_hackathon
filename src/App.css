@@ -14,15 +14,27 @@
 }
 
 .user {
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-bottom: -1rem;
   padding: 1rem;
 }
 
 .AI {
-  margin: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
   background-color: #3B364C;
   padding: 1rem;
   border-radius: 10px;
+
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+  word-break: break-word;
+
+  /* Adds a hyphen where the word breaks, if supported (No Blink) */
+  hyphens: auto;
 }
 
 h1 {

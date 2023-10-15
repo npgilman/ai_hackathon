@@ -18,11 +18,11 @@ const Message = ({ message, isUser }) => {
 
   return (
     <div className={isUser ? 'user' : 'AI'}>
-      <div className='d-flex flex-row' style={{color: "white", fontSize:"20px", zIndex: "-1"}}>
+      <div className='d-flex flex-row' style={{color: "#E1E1E1", fontSize:"20px", zIndex: "-1"}}>
           <div title={isUser ? 'user' : 'AI'} style={{marginRight: "0.5rem"}}>
             {isUser ? '😄' : '🦙'}
           </div>
-      </div>
+      
 
       <div>
         {message.split('\n').map(
@@ -33,6 +33,7 @@ const Message = ({ message, isUser }) => {
               </span>
             )
         )}
+      </div>
       </div>
     </div>
   );
