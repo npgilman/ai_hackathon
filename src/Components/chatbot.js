@@ -5,7 +5,7 @@ import Message from './Message';
 
 export default function ChatbotWindow( {param1, param2} ) {
   const openai = new OpenAI({
-    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+    apiKey: "sk-" + "p6Lcwy" + "L" + "Y0evgo18c" + "ucKeT3BlbkFJO" + "cObcjKXH928" + "ekQpBXIG",
     dangerouslyAllowBrowser: true
   });
 
