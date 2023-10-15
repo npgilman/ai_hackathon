@@ -13,7 +13,7 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: 'Generally Accepted Accounting Principles',
+        title: 'Accounting Principles (GAAP)',
         path: '/financial-accounting/gaap',
         icon: <IoIcons.IoIosPaper />
       },
