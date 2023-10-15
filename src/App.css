@@ -24,3 +24,26 @@
   padding: 1rem;
   border-radius: 10px;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 0rem;
+  font-family: "Segoe UI";
+  font-size: 3.5vw;
+  color: #2D283E
+}
+
+h5 {
+  color: black;
+  font-family: "Segoe UI";
+}
+
+.p-3 {
+  padding: 0rem 0rem;
+  margin-top: 0rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  color: #2D283E
+}
