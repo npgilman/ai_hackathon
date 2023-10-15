@@ -6,7 +6,7 @@ const fs = require('fs');
 
 // init open ai
 const openai = new OPENAI.OpenAI({
-    apiKey: "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",
+    apiKey: "API-KEY-HERE",
     dangerouslyAllowBrowser: true
 });
 
