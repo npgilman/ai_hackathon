@@ -12,7 +12,11 @@ const SidebarNav = styled.nav`
 
 const Sidebar = () => {
  return (
-    <div className='flex-shrink-0 w-22' style={{width: "17%"}}>
+    <div className='d-flex flex-column flex-shrink-0 w-22' style={{width: "17%"}}>
+        <div style={{backgroundColor: "#1E1E1E", color: "#1E1E1E", padding: "0.5rem", textAlign:"right", fontSize: "30px"}}>
+                <b style={{visibility: "hidden"}}>aiccountant</b>
+            </div>
+            
         <SidebarNav>
             {SidebarData.map((item, index) => {
                 return <SubMenu item={item} key={index} />;
