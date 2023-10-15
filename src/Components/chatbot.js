@@ -31,19 +31,23 @@ export default function ChatbotWindow( {param1, param2} ) {
     });
     setMessages(messageHistory);
 
-    // Interatc with OpenAI API
+    // Interact with OpenAI API
     setLoading(true);
-    const query = prompt;
+    const context = `
+    You are a non-talkative chatbot for a financial accounting site, 'https://main.d3zzit7f6g0xs.amplifyapp.com'. Your only function is to direct users to various pages on the website by providing links. The website has the following routes:
+    /financial-accounting
+    /reports
+    Respond to the following request from a user of the website:
+    `;
+    const query = context + prompt;
     setPrompt('');
     try {
       const result = await openai.chat.completions.create({
         model: 'gpt-3.5-turbo',
         messages: [{'role': 'user', 'content': query}],
-        max_tokens: 50,
+        max_tokens: 75,
       });
-      setPrompt('');
-      console.log('Response: ', result.choices[0].message)
-      setApiResponse(result.choices[0].message.content)
+      setApiResponse(result.choices[0].message.content);
     }
     catch (e) {
       messageHistory.push('Error');
