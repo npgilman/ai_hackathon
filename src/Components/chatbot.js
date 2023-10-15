@@ -63,7 +63,7 @@ export default function ChatbotWindow( {param1, param2} ) {
           position: "relative"
         }}
       >
-        <div style={{backgroundColor: "#1E1E1E", color: "white", padding: "0.5rem", textAlign:"right", fontSize: "30px", position: "absolute", zIndex: "1", left:"0", right: "0", fontFamily: "Segoe Ui"}}>
+        <div style={{backgroundColor: "#1E1E1E", color: "white", padding: "0.5rem", textAlign:"right", fontSize: "30px", position: "absolute", zIndex: "1", left:"0", right: "0", fontFamily: "Segoe UI"}}>
                 <b>aiccoutant.&nbsp;&nbsp;&nbsp;</b>
         </div>
         <div style={{position: 'absolute', bottom: '4rem', left: "0", right: "0"}}>
@@ -81,7 +81,7 @@ export default function ChatbotWindow( {param1, param2} ) {
         <div style={{}}>
           <form onSubmit={handleSubmit}>
             <input
-              style={{padding: '1rem', width: '71%', borderTopLeftRadius: "10px", borderBottomLeftRadius: "10px", background: "#E1E1E1", border: "0px", marginTop: "1rem", marginLeft:"1rem"}}
+              style={{padding: '1rem', width: '71%', borderTopLeftRadius: "10px", borderBottomLeftRadius: "10px", background: "#E1E1E1", border: "0px", marginTop: "1rem", marginLeft:"1rem", fontFamily: "Segoe UI"}}
               type='text'
               value={prompt}
               placeholder='Enter prompt...'
@@ -90,9 +90,11 @@ export default function ChatbotWindow( {param1, param2} ) {
             <button
               disabled={loading || prompt.length === 0}
               type='submit'
-              style= {{padding: "1rem", border: "0", borderBottomRightRadius: "10px", borderTopRightRadius: "10px", background: "#1a8754", color: "white"}}
+              style= {{padding: "1rem 0.5rem", border: "0", borderBottomRightRadius: "10px", borderTopRightRadius: "10px", background: "#1a8754", color: "white", fontFamily: "Segoe UI", width: "20%"}}
             >
+              <b>
               {loading ? 'Loading' : 'Chat'}
+              </b>
             </button>
           </form>
         </div>
