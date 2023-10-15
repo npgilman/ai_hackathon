@@ -17,9 +17,11 @@ const Message = ({ message, isUser }) => {
   };
 
   return (
-    <div className='d-flex flex-row'>
-      <div title={isUser ? 'user' : 'AI'}>
-        {isUser ? '🥸' : '🦙'}
+    <div className={isUser ? 'user' : 'AI'}>
+      <div className='d-flex flex-row' style={{color: "white", fontSize:"20px", zIndex: "-1"}}>
+          <div title={isUser ? 'user' : 'AI'} style={{marginRight: "0.5rem"}}>
+            {isUser ? '😄' : '🦙'}
+          </div>
       </div>
 
       <div>
