@@ -12,7 +12,7 @@ const SidebarNav = styled.nav`
 
 const Sidebar = () => {
  return (
-    <div className="w-22">
+    <div className='w-22'>
         <SidebarNav>
             {SidebarData.map((item, index) => {
                 return <SubMenu item={item} key={index} />;
