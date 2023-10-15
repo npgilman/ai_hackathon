@@ -35,7 +35,7 @@ export default function ChatbotWindow( {param1, param2} ) {
     // Interact with OpenAI API
     setLoading(true);
     const context = `
-    You are a chatbot for an informational accounting site, 'https://main.d3zzit7f6g0xs.amplifyapp.com'. Your only function is to direct users to various pages on the website by providing links. The website has the following routes:
+    You are a chatbot for an informational accounting site, 'https://main.dme28lqrqpati.amplifyapp.com'. Your only function is to direct users to various pages on the website by providing links. The website has the following routes:
     /financial-accounting
     /financial-accounting/gaap
     /financial-accounting/financial-statements
