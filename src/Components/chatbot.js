@@ -1,4 +1,5 @@
 import { React, useState } from 'react';
+import ScrollToBottom from 'react-scroll-to-bottom';
 import OpenAI from 'openai';
 import Message from './Message';
 
@@ -70,9 +71,11 @@ export default function ChatbotWindow( {param1, param2} ) {
         <div style={{backgroundColor: "#1E1E1E", color: "white", padding: "0.5rem", textAlign:"right", fontSize: "30px", position: "absolute", zIndex: "1", left:"0", right: "0", fontFamily: "Segoe UI"}}>
                 <b>aiccoutant.&nbsp;&nbsp;&nbsp;</b>
         </div>
-        <div style={{position: 'absolute', bottom: '4rem', left: "0", right: "0"}}>
+        <div style={{position: 'absolute', bottom: '4rem', left: "0", right: "0", maxHeight: "88vh"}}>
         <div style={{position: 'relative', padding: "1rem"}}>
-        <article className='pb-24'>
+        <ScrollToBottom>
+        <div style={{height: "80vh", alignContent: "bottom"}}>
+        
           {messages.map((message, index) => (
             <Message
               key={`message-${index}`}
@@ -81,7 +84,9 @@ export default function ChatbotWindow( {param1, param2} ) {
             />
           ))}
           {loading ? <Message message={''} isUser={false} /> : <Message message={apiResponse} isUser={false} />}
-        </article>
+        
+          </div>
+          </ScrollToBottom >
         <div style={{}}>
           <form onSubmit={handleSubmit}>
             <input
