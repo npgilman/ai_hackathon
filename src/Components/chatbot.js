@@ -63,8 +63,8 @@ export default function ChatbotWindow( {param1, param2} ) {
           position: "relative"
         }}
       >
-        <div style={{backgroundColor: "#1E1E1E", color: "white", padding: "0.5rem", textAlign:"right", fontSize: "30px", position: "absolute", zIndex: "1", left:"0", right: "0"}}>
-                aiccoutant.
+        <div style={{backgroundColor: "#1E1E1E", color: "white", padding: "0.5rem", textAlign:"right", fontSize: "30px", position: "absolute", zIndex: "1", left:"0", right: "0", fontFamily: "Segoe Ui"}}>
+                <b>aiccoutant.&nbsp;&nbsp;&nbsp;</b>
         </div>
         <div style={{position: 'absolute', bottom: '4rem', left: "0", right: "0"}}>
         <div style={{position: 'relative', padding: "1rem"}}>
