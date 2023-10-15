@@ -12,3 +12,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+.user {
+  margin: 1rem;
+}
+
+.AI {
+  margin: 1rem;
+  background-color: #3B364C;
+  padding: 1rem;
+  border-radius: 10px;
+}

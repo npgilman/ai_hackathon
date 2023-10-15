@@ -8,7 +8,7 @@ import { Routes, Route } from 'react-router-dom';
 
 function PageToRender() {
     return (
-        <div className='flex-fill'>
+        <div className='flex-fill' style={{backgroundColor: "#D1D7E0"}}>
             <Routes>
                 <Route path='/' exact element={<LandingPage />} />
                 

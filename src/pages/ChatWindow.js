@@ -3,7 +3,7 @@ import ChatbotWindow from '../Components/chatbot.js'
 
 function ChatWindow() {
     return (
-        <div style= {{width: '25%'}}>
+        <div style= {{width: '25%', backgroundColor: '#2D283E'}}>
             <ChatbotWindow />
         </div>
     );

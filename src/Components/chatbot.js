@@ -60,10 +60,11 @@ export default function ChatbotWindow( {param1, param2} ) {
           justifyContent: 'center',
           alignItems: 'center',
           height: '100vh',
+          position: "relative"
         }}
       >
-        <div style={{position: 'absolute', bottom: '5rem'}}>
-        <div style={{position: 'relative', left: '1rem', right: '1rem', width: '100%'}}>
+        <div style={{position: 'absolute', bottom: '4rem', left: "0", right: "0"}}>
+        <div style={{position: 'relative', padding: "1rem"}}>
         <article className='pb-24'>
           {messages.map((message, index) => (
             <Message
@@ -77,15 +78,16 @@ export default function ChatbotWindow( {param1, param2} ) {
         <div style={{}}>
           <form onSubmit={handleSubmit}>
             <input
-              style={{padding: '1rem', width: '75%'}}
+              style={{padding: '1rem', width: '71%', borderTopLeftRadius: "10px", borderBottomLeftRadius: "10px", background: "#E1E1E1", border: "0px", marginTop: "1rem", marginLeft:"1rem"}}
               type='text'
               value={prompt}
-              placeholder='Enter prompt'
+              placeholder='Enter prompt...'
               onChange={(e) => setPrompt(e.target.value)}
             ></input>
             <button
               disabled={loading || prompt.length === 0}
               type='submit'
+              style= {{padding: "1rem", border: "0", borderBottomRightRadius: "10px", borderTopRightRadius: "10px", background: "#1a8754", color: "white"}}
             >
               {loading ? 'Loading' : 'Chat'}
             </button>
