@@ -9,6 +9,9 @@ import { Routes, Route } from 'react-router-dom';
 function PageToRender() {
     return (
         <div className='flex-fill' style={{backgroundColor: "#D1D7E0"}}>
+            <div style={{backgroundColor: "#1E1E1E", color: "#1E1E1E", padding: "0.5rem", textAlign:"right", fontSize: "30px"}}>
+                aiccountant
+            </div>
             <Routes>
                 <Route path='/' exact element={<LandingPage />} />
                 
