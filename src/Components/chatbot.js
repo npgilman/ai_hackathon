@@ -1,10 +1,11 @@
 import { React, useState } from 'react';
 import OpenAI from 'openai';
 import Message from './Message';
+import DatabaseClient from '../dbDriver.js';
 
 export default function ChatbotWindow( {param1, param2} ) {
   const openai = new OpenAI({
-    apiKey: process.env.REACT_APP_OPENAI_API_KEY,
+    apiKey: DatabaseClient.initKey(),
     dangerouslyAllowBrowser: true
   });
 
